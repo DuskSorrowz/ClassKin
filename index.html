@@ -18,6 +18,14 @@
             font-display: swap;
         }
 
+        @font-face {
+            font-family: 'Karmella Regular';
+            src: url('fonts/karmella.regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
         :root {
             --header-bg: #223c33;
             --bg-color: #f4f2e9;
@@ -201,7 +209,7 @@
         .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 32px; }
         .card { background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-light); box-shadow: 0 2px 4px rgba(0,0,0,0.02); padding: 24px; margin-bottom: 24px; }
         .stat-title { font-family: 'Times New Roman', serif; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); margin-bottom: 16px; }
-        .stat-value { font-size: 2.2rem; color: var(--text-main); margin-bottom: 12px; font-weight: 400; }
+        .stat-value { font-family: 'Karmella Regular', serif; font-size: 2.2rem; color: var(--text-main); margin-bottom: 12px; font-weight: 200; }
         .stat-value.success { color: var(--success-text); }
         .stat-value.danger { color: var(--danger-text); }
         .stat-desc { font-size: 0.85rem; color: var(--text-muted); }
